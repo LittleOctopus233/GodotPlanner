@@ -1,4 +1,4 @@
-﻿#include "utility.h"
+#include "utility.h"
 
 #include <windows.h>
 #include <conio.h>
@@ -37,16 +37,4 @@ void ShowConsole() {
 	FILE* pFile;
 	freopen_s(&pFile, "CONOUT$", "w", stdout);
 	freopen_s(&pFile, "CONIN$", "r", stdin);
-}
-
-void ShowBasicInfo() {
-	WriteLineW(L"================================");
-	WriteLineW(L"Godot统筹 v0.2-console");
-	WriteLineW(L"");
-	WriteLineW(L"made by : OctopusZhang");
-	WriteLineW(L"made date : 2026/7/2");
-	WriteLineW(L"");
-	WriteLineW(L"纳西妲世界第一可爱");
-	WriteLineW(L"================================");
-	WriteLineW(L"");
 }
