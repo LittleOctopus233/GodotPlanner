@@ -11,5 +11,3 @@ void WriteLineW(const std::wstring& wstr);
 void WriteW(const std::wstring& wstr);
 
 void ShowConsole();
-
-void ShowBasicInfo();
