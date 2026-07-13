@@ -11,10 +11,10 @@
 
 void ShowBasicInfo() {
 	WriteLineW(L"================================");
-	WriteLineW(L"Godot统筹 v0.3-console");
+	WriteLineW(L"Godot统筹 v0.3.1-console");
 	WriteLineW(L"");
 	WriteLineW(L"made by : OctopusZhang");
-	WriteLineW(L"made date : 2026/7/12");
+	WriteLineW(L"made date : 2026/7/13");
 	WriteLineW(L"");
 	WriteLineW(L"纳西妲世界第一可爱");
 	WriteLineW(L"================================");
@@ -23,7 +23,7 @@ void ShowBasicInfo() {
 
 void ShowMenu() {
 	WriteLineW(L"================================");
-	WriteLineW(L"    Godot统筹 v0.3-console");
+	WriteLineW(L"    Godot统筹 v0.3.1-console");
 	WriteLineW(L"================================");
 	WriteLineW(L"(a) 打开引擎      (b) 打开项目");
 	WriteLineW(L"================================");
@@ -172,6 +172,7 @@ int wmain(int argc, wchar_t* argv[]) {
 				}
 				break;
 			default:
+				if (choice == '0') choice += 10;
 				if (mode == 1) {
 					SelectEngine(engines, choice - '0', page);
 				}
