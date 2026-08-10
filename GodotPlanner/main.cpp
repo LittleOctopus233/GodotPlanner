@@ -11,19 +11,22 @@
 
 void ShowBasicInfo() {
 	WriteLineW(L"================================");
-	WriteLineW(L"Godot统筹 v0.3.1-console");
+	WriteLineW(L"Godot统筹 v0.3.2-console");
 	WriteLineW(L"");
-	WriteLineW(L"made by : OctopusZhang");
-	WriteLineW(L"made date : 2026/7/13");
+	WriteLineW(L"开发者 : LittleOctopus233");
+	WriteLineW(L"制作时间 : 2026/8/10");
+	WriteLineW(L"仓库地址 : https://github.com/LittleOctopus233/GodotPlanner");
+	WriteLineW(L"开源协议 : MIT License");
 	WriteLineW(L"");
 	WriteLineW(L"纳西妲世界第一可爱");
+	WriteLineW(L"Copyright (c) 2026 LittleOctopus233");
 	WriteLineW(L"================================");
 	WriteLineW(L"");
 }
 
 void ShowMenu() {
 	WriteLineW(L"================================");
-	WriteLineW(L"    Godot统筹 v0.3.1-console");
+	WriteLineW(L"    Godot统筹 v0.3.2-console");
 	WriteLineW(L"================================");
 	WriteLineW(L"(a) 打开引擎      (b) 打开项目");
 	WriteLineW(L"================================");
@@ -143,27 +146,33 @@ int wmain(int argc, wchar_t* argv[]) {
 
 			switch(choice) {
 			case 'a':
+			case 'A':
 				mode = 1;
 				page = 1;
 				break;
 			case 'b':
+			case 'B':
 				mode = 2;
 				page = 1;
 				break;
 			case 'c':
+			case 'C':
 				return 0;
 			case 'd':
+			case 'D':
 				system("cls");
 				ShowBasicInfo();
 				WriteLineW(L"按任意键返回菜单...");
 				_getch();
 				break;
 			case 'q':
+			case 'Q':
 				if (page > 1) {
 					page--;
 				}
 				break;
 			case 'e':
+			case 'E':
 				if (mode == 1 && page * 10 < engines.size()) {
 					page++;
 				}
