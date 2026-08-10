@@ -43,7 +43,7 @@ Godot引擎和项目管理工具，帮助开发者快速管理多个Godot引擎�
 (可手动设置.godot文件打开方式为此应用，即可双击.godot文件打开项目)
 
 ```bash
-GodotPlanner.exe "C:\path\to\project\project.godot"
+GodotPlanner.exe "C:\Godot\Projects\project.godot"
 ```
 
 通过命令行传入项目文件路径，程序会静默加载并直接打开项目，不会显示控制台窗口。
@@ -93,9 +93,8 @@ Godot_vX.Y-dev_win64.exe
 ## 注意事项
 
 - 程序以独立进程方式启动Godot引擎，启动后本程序会退出
-- 首次运行需要管理员权限以创建配置目录
-- 配置文件中的路径需要使用正斜杠 `/` 或双反斜杠 `\\`
 - 将'0'映射为"10"，以便可以选择1-10的项目
+- 大小写字母均能正常识别
 
 ## 许可证
 
